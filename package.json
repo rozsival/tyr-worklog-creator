@@ -7,10 +7,10 @@
     "start": "tsx app.ts"
   },
   "dependencies": {
-    "@types/inquirer": "9.0.7",
+    "@types/inquirer": "9.0.8",
     "@types/node": "22.16.5",
     "dotenv": "16.6.1",
-    "inquirer": "9.2.15",
+    "inquirer": "9.3.7",
     "tsx": "4.20.3",
     "typescript": "5.8.3"
   },
