@@ -26,6 +26,13 @@ This CLI tool helps you bulk-create worklog entries for the Tyr system with mini
 - 🚀 **Batch Processing**: Creates all selected worklogs in one go
 - 🕘 **Smart Timing**: Automatically sets start time to 9:00 AM
 
+## 🛠️ Requirements
+
+- Node.js `v22`
+- pnpm `v10`
+- Valid JWT token for TYR (can be obtained from your browser's dev tools)
+- A healthy appreciation for automation over manual labor
+
 ## 🚀 Quick Start
 
 1. **Clone and install**:
@@ -65,13 +72,6 @@ The script will guide you through:
 2. **Details Entry**: Enter comment, time spent (defaults to 8h), project, and ticket
 3. **Preview & Confirm**: Review the operation before execution
 4. **Batch Creation**: Sit back and watch your worklogs get created
-
-## 🛠️ Requirements
-
-- Node.js (recent version)
-- pnpm
-- Valid JWT token for the Tyr system
-- A healthy appreciation for automation over manual labor
 
 ## 🎨 Example Output
 
