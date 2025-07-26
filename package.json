@@ -1,0 +1,21 @@
+{
+  "name": "tyr-worklog-hack",
+  "version": "0.0.0",
+  "type": "module",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "tsx app.ts"
+  },
+  "dependencies": {
+    "@types/inquirer": "9.0.7",
+    "@types/node": "24.1.0",
+    "dotenv": "16.4.5",
+    "inquirer": "9.2.15",
+    "tsx": "4.20.3",
+    "typescript": "5.8.3"
+  },
+  "packageManager": "pnpm@10.0.0",
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
