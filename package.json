@@ -10,7 +10,7 @@
     "@types/inquirer": "9.0.8",
     "@types/node": "22.16.5",
     "dotenv": "17.2.1",
-    "inquirer": "9.3.7",
+    "inquirer": "12.8.2",
     "tsx": "4.20.3",
     "typescript": "5.8.3"
   },
