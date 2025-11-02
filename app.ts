@@ -13,12 +13,11 @@ interface WorklogInput {
   ticket: string;
 }
 
-// Get all work days (Monday-Friday) in current month
-function getWorkDaysInCurrentMonth(): Date[] {
+
+// Get all work days (Monday-Friday) in a specific month
+function getWorkDaysInMonth(year: number, month: number): Date[] {
   const now = new Date();
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()); // Today at 00:00:00
-  const year = now.getFullYear();
-  const month = now.getMonth();
 
   const firstDay = new Date(year, month, 1);
   const lastDay = new Date(year, month + 1, 0);
@@ -128,8 +127,44 @@ async function main() {
     process.exit(1);
   }
 
-  // Get work days for current month
-  const workDays = getWorkDaysInCurrentMonth();
+  // Ask user to select month
+  const now = new Date();
+  const currentMonth = now.getMonth();
+  const currentYear = now.getFullYear();
+  const previousMonth = currentMonth === 0 ? 11 : currentMonth - 1;
+  const previousMonthYear = currentMonth === 0 ? currentYear - 1 : currentYear;
+
+  const currentMonthName = new Date(currentYear, currentMonth, 1).toLocaleDateString('en-US', {
+    month: 'long',
+    year: 'numeric'
+  });
+  const previousMonthName = new Date(previousMonthYear, previousMonth, 1).toLocaleDateString('en-US', {
+    month: 'long',
+    year: 'numeric'
+  });
+
+  const { selectedMonth } = await inquirer.prompt<{ selectedMonth: 'current' | 'previous' }>([
+    {
+      type: 'list',
+      name: 'selectedMonth',
+      message: 'Select month for worklogs:',
+      choices: [
+        { name: `${currentMonthName} (current month)`, value: 'current' },
+        { name: `${previousMonthName} (previous month)`, value: 'previous' }
+      ]
+    }
+  ]);
+
+  // Get work days for selected month
+  const workDays = selectedMonth === 'current'
+    ? getWorkDaysInMonth(currentYear, currentMonth)
+    : getWorkDaysInMonth(previousMonthYear, previousMonth);
+
+  if (workDays.length === 0) {
+    console.log('❌ No work days found in selected month. Exiting...');
+    process.exit(0);
+  }
+
   const weekGroups = groupWorkDaysByWeek(workDays);
 
   // Allow user to exclude dates
