@@ -12,14 +12,14 @@ importers:
         specifier: 9.0.9
         version: 9.0.9
       '@types/node':
-        specifier: 22.18.13
-        version: 22.18.13
+        specifier: 22.19.17
+        version: 22.19.17
       dotenv:
         specifier: 17.2.3
         version: 17.2.3
       inquirer:
         specifier: 9.3.8
-        version: 9.3.8(@types/node@22.18.13)
+        version: 9.3.8(@types/node@22.19.17)
       tsx:
         specifier: 4.20.6
         version: 4.20.6
@@ -201,8 +201,8 @@ packages:
   '@types/inquirer@9.0.9':
     resolution: {integrity: sha512-/mWx5136gts2Z2e5izdoRCo46lPp5TMs9R15GTSsgg/XnZyxDWVqoVU3R9lWnccKpqwsJLvRoxbCjoJtZB7DSw==}
 
-  '@types/node@22.18.13':
-    resolution: {integrity: sha512-Bo45YKIjnmFtv6I1TuC8AaHBbqXtIo+Om5fE4QiU1Tj8QR/qt+8O3BAtOimG5IFmwaWiPmB3Mv3jtYzBA4Us2A==}
+  '@types/node@22.19.17':
+    resolution: {integrity: sha512-wGdMcf+vPYM6jikpS/qhg6WiqSV/OhG+jeeHT/KlVqxYfD40iYJf9/AE1uQxVWFvU7MipKRkRv8NSHiCGgPr8Q==}
 
   '@types/through@0.0.33':
     resolution: {integrity: sha512-HsJ+z3QuETzP3cswwtzt2vEIiHBk/dCcHGhbmG5X3ecnwFD/lPrMpliGXxSCg03L9AhrdwA4Oz/qfspkDW+xGQ==}
@@ -487,12 +487,12 @@ snapshots:
   '@esbuild/win32-x64@0.25.8':
     optional: true
 
-  '@inquirer/external-editor@1.0.2(@types/node@22.18.13)':
+  '@inquirer/external-editor@1.0.2(@types/node@22.19.17)':
     dependencies:
       chardet: 2.1.0
       iconv-lite: 0.7.0
     optionalDependencies:
-      '@types/node': 22.18.13
+      '@types/node': 22.19.17
 
   '@inquirer/figures@1.0.13': {}
 
@@ -501,13 +501,13 @@ snapshots:
       '@types/through': 0.0.33
       rxjs: 7.8.2
 
-  '@types/node@22.18.13':
+  '@types/node@22.19.17':
     dependencies:
       undici-types: 6.21.0
 
   '@types/through@0.0.33':
     dependencies:
-      '@types/node': 22.18.13
+      '@types/node': 22.19.17
 
   ansi-escapes@4.3.2:
     dependencies:
@@ -609,9 +609,9 @@ snapshots:
 
   inherits@2.0.4: {}
 
-  inquirer@9.3.8(@types/node@22.18.13):
+  inquirer@9.3.8(@types/node@22.19.17):
     dependencies:
-      '@inquirer/external-editor': 1.0.2(@types/node@22.18.13)
+      '@inquirer/external-editor': 1.0.2(@types/node@22.19.17)
       '@inquirer/figures': 1.0.13
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
