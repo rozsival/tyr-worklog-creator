@@ -15,8 +15,8 @@ importers:
         specifier: 22.18.13
         version: 22.18.13
       dotenv:
-        specifier: 17.2.3
-        version: 17.2.3
+        specifier: 17.4.1
+        version: 17.4.1
       inquirer:
         specifier: 9.3.8
         version: 9.3.8(@types/node@22.18.13)
@@ -261,8 +261,8 @@ packages:
   defaults@1.0.4:
     resolution: {integrity: sha512-eFuaLoy/Rxalv2kr+lqMlUnrDWV+3j4pljOIJgLIhI058IQfWJ7vXhyEIHu+HtC738klGALYxOKDO0bQP3tg8A==}
 
-  dotenv@17.2.3:
-    resolution: {integrity: sha512-JVUnt+DUIzu87TABbhPmNfVdBDt18BLOWjMUFJMSi/Qqg7NTYtabbvSNJGOJ7afbRuv9D/lngizHtP7QyLQ+9w==}
+  dotenv@17.4.1:
+    resolution: {integrity: sha512-k8DaKGP6r1G30Lx8V4+pCsLzKr8vLmV2paqEj1Y55GdAgJuIqpRp5FfajGF8KtwMxCz9qJc6wUIJnm053d/WCw==}
     engines: {node: '>=12'}
 
   emoji-regex@8.0.0:
@@ -559,7 +559,7 @@ snapshots:
     dependencies:
       clone: 1.0.4
 
-  dotenv@17.2.3: {}
+  dotenv@17.4.1: {}
 
   emoji-regex@8.0.0: {}
 
